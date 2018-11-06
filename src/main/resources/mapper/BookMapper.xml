@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.gj.dao.BookDao">
+
+    <select id="getBook" parameterType="int" resultType="Book">
+        SELECT book_id bookId, name name,number number from book where book_id =#{id}
+    </select>
+
+</mapper>
